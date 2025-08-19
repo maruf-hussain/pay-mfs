@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay Home Page</title>
+    <title>Pay Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
-    <h1>Welcome To Home Page</h1>
+   <main class="flex justify-center ">
+    <div class="mockup-phone ">
+<div class="mockup-phone bg-gray-100">
+  <div class="mockup-phone-camera"></div>
+  <div class="mockup-phone-display text-white grid place-content-center">
+    <div class="stats shadow bg-gray-400">
+        <div class="stat text-center">
+        <div id="balance" class="stat-value text-black">5000</div>
+        <div class="stat-desc text-blue-900 text-2xl">Avilable Balance</div>
+    </div>
+
+</div>
+            <div class="divider"></div>
+            <div>
+            <button id="addmoney" class="btn btn-xl bg-green-600">Add Money</button>
+            <button id="cashout" class="btn btn-xl bg-red-600 ">Cash Out</button>
+            </div>
+            <div class="divider"></div>
+             <div class="card bg-gray-600 w-full max-w-sm shrink-0 shadow-2xl rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Add Amount</label>
+          <input id="amount" type="text" class="input text-black" placeholder="Your Amount"  />
+          <label class="label">Pin</label>
+          <input id="pin" type="password" class="input text-black" placeholder="Pin"   />
+          <div><a class="link link-hover">Forgot password?</a></div>
+      
+        </fieldset>
+      </div>
+    </div>
+           
+  </div>
+</div>
+   </main> 
+
+
+   <script src="js/pay.js"></script>
 </body>
 </html>
